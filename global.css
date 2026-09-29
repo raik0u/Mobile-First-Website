@@ -1,0 +1,79 @@
+.page{
+    display: grid;
+    gap:1rem;
+    grid-template-areas: "header" "main" "aside-left" "aside-right" "footer";
+}
+
+.site-header{grid-area:header;  }
+.site-main {grid-area:main;    }
+.site-aside-left{grid-area:aside-left;    }
+.site-aside-right{grid-area:aside-right;    }
+.site-footer{grid-area:footer;   }
+
+@media (min-width:1024px)  {
+    .page{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header header" 
+        "aside-left main main aside-right" 
+        "footer footer footer footer";
+    }
+}
+
+
+
+.site-main{
+    background:yellow;
+}
+
+.site-aside{
+    background:blue;
+}
+
+.site-footer{
+    background:green;
+}
+
+/* #6B4226 — Coffee Brown
+#A67C52 — Warm Caramel
+#D8C3A5 — Soft Beige
+#F3EBDD — Cream
+#596B3A — Sage / Leaf Green */
+
+
+
+/* Website start */
+
+
+
+.site-header{
+    background-color:#d8c3a5;
+    padding-top:20px;
+    padding-left:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+.site-title{
+    font-weight:700;
+    color:#6b4226;
+    font-size:100px;
+}
+
+.site-nav{
+    font-size:35px;
+    display:flex;
+    gap:25px;
+    align-items:center;
+    text-decoration-line: none;
+    padding-top:20px;
+    padding-right:60px;
+    padding-bottom:20px; 
+}
+
+.sites{
+    text-decoration-line: none;
+    color:#6b4226
+}
