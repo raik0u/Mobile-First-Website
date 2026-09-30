@@ -10,25 +10,7 @@
 .site-aside-right{grid-area:aside-right;    }
 .site-footer{grid-area:footer;   }
 
-@media (min-width:1024px)  {
-    .page{
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas: 
-        "header header header header" 
-        "aside-left main main aside-right" 
-        "footer footer footer footer";
-    }
-}
 
-
-
-.site-main{
-    background:yellow;
-}
-
-.site-aside{
-    background:blue;
-}
 
 .site-footer{
     background:green;
@@ -44,9 +26,17 @@
 
 /* Website start */
 
+/* h1, h2, h3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:700;
+} */
 
+/* header start */
 
 .site-header{
+    border-radius:25px;
     background-color:#d8c3a5;
     padding-top:20px;
     padding-left:10px;
@@ -77,3 +67,200 @@
     text-decoration-line: none;
     color:#6b4226
 }
+
+/* header end */
+
+/* main start */
+
+.site-main{
+    background-color:#d8c3a5;
+    border-radius:25px;
+}
+
+
+.main-header{
+    font-size:40px;
+    color:#6b4226;
+    padding-left:20px;
+    font-weight:700;
+    /* add a font */
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(1, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.products h3 {
+    margin: 0px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.371);
+}
+
+.product-card{
+    border: 1px solid #A67C52;
+    border-radius:40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.26);
+}
+
+img{
+    height: 48%;
+    width:100%;
+    border-radius: 40px;
+}
+
+.product-info{
+    height: 48%;
+    padding:20px;
+    background-color:#A67C5220;
+    border-radius:40px;
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-cappuccino{
+    padding-bottom:10px;
+    font-weight:700;
+    font-size:40px;
+    letter-spacing: 4px;;
+    /* text-shadow: 10px 10px  color rgba(0, 0, 0, 0.525) */
+}
+
+.product-lum{
+    padding-bottom:10px;
+    font-weight:700;
+    font-size:40px;
+    letter-spacing: 4px;;
+}
+
+.product-americano{
+    padding-bottom:10px;
+    font-weight:700;
+    font-size:40px;
+    letter-spacing: 4px;;
+}
+
+.product-latte{
+    padding-bottom:10px;
+    font-weight:700;
+    font-size:40px;
+    letter-spacing: 4px;;
+}
+
+.product-lm{
+    padding-bottom:10px;
+    font-weight:700;
+    font-size:40px;
+    letter-spacing: 4px;;
+}
+
+.product-description{
+    font-size:30px;
+    color:#6b4226;
+    padding-right:50px;
+    margin: 0px;
+}
+
+.product-footer{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.product-price{
+    font-weight: 800;
+    font-size:45px;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.product-button{
+    height:60px;
+    width:280px;
+    font-size:30px;
+    border:5px solid #A67C52;
+    border-radius:100px;
+    background-color:transparent;
+}
+/* main end */
+
+/* aside left start */
+.site-aside-left{
+    background-color:#d8c3a5;
+    border-radius:25px;
+}
+
+.div-aside-left{
+    border:3px solid #A67C52;
+    border-radius:50px;
+    margin:10px;
+}
+
+.left-aside-title{
+    font-weight:800;
+    font-size:40px;
+    color:#6b4226;
+    padding-left:30px;
+}
+
+.left-aside-li{
+    margin-left:30px;
+    padding-left:20px;
+}
+
+ul{
+    list-style-type:circle;
+    color:#6b4226;
+}
+
+li::marker{
+    font-weight: 900;
+    font-size:45px;
+}
+
+.left-aside-links{
+    text-decoration-line: none;
+    color:#6b422697;
+    font-size:35px;
+    font-weight:600;
+}
+
+
+/* aside left end */
+
+
+/* aside right start */
+
+
+
+
+
+/* aside right end */
+
+/* media start */
+
+@media (min-width:1024px)  {
+    .page{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header header" 
+        "aside-left main main aside-right" 
+        "footer footer footer footer";
+    }
+
+    .products{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+
+/* media end */
